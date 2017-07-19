@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+
+        <TextView
+            android:id="@+id/login_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/choose"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:background="@drawable/input_background"
+            android:hint="请输入您要查询的地点"
+            android:layout_marginBottom="59dp"
+            android:layout_above="@+id/choose_button"
+            android:layout_alignRight="@+id/choose_button"
+            android:layout_alignEnd="@+id/choose_button" />
+
+    <Button
+        android:id="@+id/choose_button"
+        android:text="查询"
+        android:textColor="#6495ED"
+        android:layout_width="240dp"
+        android:layout_height="36dp"
+        android:background="@drawable/register_03"
+        android:layout_marginBottom="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:text="关键字查询:"
+        android:layout_above="@+id/choose"
+        android:layout_alignLeft="@+id/choose"
+        android:layout_alignStart="@+id/choose" />
+
+
+</RelativeLayout>

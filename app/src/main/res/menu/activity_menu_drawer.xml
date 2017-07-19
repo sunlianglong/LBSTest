@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Open"
+            android:icon="@drawable/ic_lock_open_"
+            android:title="Open" />
+        <item
+            android:id="@+id/Close"
+            android:icon="@drawable/ic_close_money"
+            android:title="Close" />
+        <item
+            android:id="@+id/Settings"
+            android:icon="@drawable/ic_seting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/About"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+    </group>
+
+    <item android:title="Other functions">
+        <menu>
+            <item
+                android:id="@+id/Share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/Update"
+                android:icon="@drawable/ic_update"
+                android:title="Update" />
+        </menu>
+    </item>
+
+</menu>
